@@ -1,0 +1,25 @@
+/* Add this CSS to your stylesheet */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Set your desired background color */
+  }
+  
+  .navbar-link-left {
+    text-decoration: none;
+    color: #007bff; /* Set your desired text color */
+    font-weight: bold;
+  }
+  
+  .navbar-links-right {
+    display: flex;
+  }
+  
+  .navbar-link-right {
+    margin-left: 35px; /* Adjust the spacing between links */
+    text-decoration: none;
+    color: #007bff; /* Set your desired text color */
+  }
+  
