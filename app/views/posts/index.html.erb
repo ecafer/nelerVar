@@ -1,1 +1,11 @@
-<h1>This will be the index view</h1>
+<!-- app/views/posts/index.html.erb -->
+<%= stylesheet_link_tag 'index' %>
+
+<h1>Blog posts</h1>
+
+<% @posts.each do |post| %>
+    <div class="blog-post" >
+        <h2><%= post.title %></h2>
+        <p><%= post.body %></p>
+    </div>
+<% end %>
