@@ -1,0 +1,13 @@
+<h1>Edit Blog Entry</h1>
+
+<%= form_with model: @post, data: { turbo: false }, method: :patch, url: update_post_path(@post) do |form| %>
+    <div>
+        <%= form.label :title%>
+        <%= form.text_field :title%>
+    </div>
+    <div>
+        <%= form.label :body%>
+        <%= form.text_area :body, size: "150x10"%>
+    </div>
+    <%= form.submit "Edit post", class: "btn btn-primary" %>
+<% end %>
