@@ -5,6 +5,7 @@ class PostsController < ApplicationController
     end
 
     def new
+        @post = Post.new
     end
 
     def create
@@ -23,7 +24,6 @@ class PostsController < ApplicationController
 
     def update
         @post = Post.find(params[:id])
-        puts post_params
         if @post.update(post_params)
             redirect_to root_path
         end
@@ -31,6 +31,12 @@ class PostsController < ApplicationController
 
     def show
         @post = Post.find(params[:id])
+    end
+
+    def destroy
+        @post = Post.find(params[:id])
+        @post.destroy
+        redirect_to root_path, status: :see_other
     end
     
     private
