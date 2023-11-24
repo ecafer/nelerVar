@@ -1,21 +1,36 @@
 .blog-post {
     margin-top: 30px;
-}
-
-.btn-edit {
-    background-color: aquamarine;
-    float: right;
-    margin: 5px;
+    border-radius: 10px;
 }
 
 .btn-delete {
     background-color: rgb(223, 0, 0);
     float: right;
     margin: 5px;
+    border-radius: 5px;
 }
+
+.btn-edit {
+    background-color: aquamarine;
+    float: right;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
 
 .edit-info {
     font-style: italic;
     float: right;
     margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Add the following style to ensure buttons are displayed on the same line */
+.btn-edit,
+.btn-delete {
+    display: inline-block;
 }

@@ -1,8 +1,8 @@
 <%= stylesheet_link_tag 'blogpost' %>
 
 <div class="blog-post" >
-    <button class="btn-edit" type="button"><%= link_to "Edit", edit_post_path(post.id) %></button>
     <button class="btn-delete" type="button"><%= link_to "Delete", destroy_post_path(post.id), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete this post?"} %></button>
+    <button class="btn-edit" type="button"><%= link_to "Edit", edit_post_path(post.id) %></button>
     <h2><%= link_to post.title, show_post_path(post.id) %></h2>
     <p><%= post.body %></p>
     <p class="edit-info"> created: <%= post.created_at %></p>
